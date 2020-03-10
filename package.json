@@ -1,0 +1,15 @@
+{
+  "name": "contact-list",
+  "version": "1.0.0",
+  "description": "A contact list that can store name and phone numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kumaran",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
