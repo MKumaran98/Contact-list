@@ -28,6 +28,16 @@ app.post('/add-contact',function(req,res){
     return res.redirect('back');
 });
 
+app.get('/delete-contact',function(req,res){
+    let number=req.query.phone;
+    let contactIndex=contactList.findIndex(contactList=>contactList.number==number);
+    if(number != -1){
+        contactList.splice(contactIndex,1);
+    }
+    return res.redirect('back');
+});
+
+
 app.listen(port,function(error){
     if(error){
         console.log(error);

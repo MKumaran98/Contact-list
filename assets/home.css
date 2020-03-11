@@ -19,6 +19,12 @@ body{
     width: 450px;
 }
 
+.details-container{
+    width: 93%;
+    display:inline-flex;
+    justify-content: space-between;
+}
+
 .list-style{
     color: white;
     background-color: blue;
@@ -28,6 +34,11 @@ body{
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+}
+
+.close-button{
+    color: red;
+    
 }
 
 .list-style:hover{

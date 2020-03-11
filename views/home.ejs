@@ -10,9 +10,15 @@
             <ul id="list">    
                 <%for(let i of contact_list){%>
                 <li class="list-style">
-                    <span ><%=i.name%></span>
-                    <span ><%=i.number%></span>
+                    <div class="details-container">
+                        <span ><%=i.name%></span>
+                        <span ><%=i.number%></span>
+                    </div>
+                    <a href="/delete-contact/?number=<%=i.number%>" class="close-button">
+                        <i class="fas fa-window-close"></i>
+                    </a>
                 </li>
+                
                 <%}%>
             </ul>
             <form action="/add-contact" method="POST" id="input">
